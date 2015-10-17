@@ -1,0 +1,28 @@
+%Preamble
+\documentclass[a4paper]{article}
+\usepackage[landscape]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\chead{RUKU 18}
+\rhead{{\thepage} of {\pageref{LastPage}}}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{anyfontsize}
+\usepackage{quran}
+\usepackage{arabxetex}
+\defaultfontfeatures[\arabicfont]{Script=Arabic,Scale=2.8,WordSpace=3}
+\newfontfamily{\arabicfont}{UthmanTN1B Ver10.otf}
+%Body
+\begin{document}
+\begin{arab}[utf]
+\setstretch{10.0}
+\noindent
+\quranruku*[18]
+\end{arab}
+\end{document}
+%%% Local Variables:
+%%% mode: xelatex
+%%% TeX-master: t
+%%% End:
